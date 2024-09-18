@@ -1,0 +1,21 @@
+union jobs
+{
+	char name[32]-------->sizeof(name)     =32
+	float salary -------->sizeof(salary)   =4
+	int worker_no-------->sizeof(worker_no)=4
+}u;
+sizeof(u) of data type Union wil be the biggest data type of its member which is
+char name[32]-------->sizeof(name)=32
+sizeof(u)=32
+
+struct job1
+{
+	char name[32]-------->sizeof(name)     =32
+	float salary -------->sizeof(salary)   =4
+	int worker_no-------->sizeof(worker_no)=4
+}s;
+sizeof(s) of data type structure wil be the sum of the size of data type of its members which is
+char name[32]-------->sizeof(name)     =32
+float salary -------->sizeof(salary)   =4
+int worker_no-------->sizeof(worker_no)=4
+sizeof(u)=40
